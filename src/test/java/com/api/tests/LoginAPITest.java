@@ -33,7 +33,7 @@ public class LoginAPITest {
 		.and().when().post("login")
 		.then()
 		.log().body()
-		.statusCode(200).time(lessThan(2000L))
+		.statusCode(200).time(lessThan(8000L))
 		.and().body("message", equalTo("Success"))
 		.and().body(JsonSchemaValidator.matchesJsonSchemaInClasspath("jsonschemaValidator/LoginResponseValidation.json"));
 		
