@@ -32,7 +32,7 @@ public class UserDetailsAPITest {
 		.then().log().ifValidationFails()
 		.statusCode(200)
 		.and().time(lessThan(8500L))
-		.body(JsonSchemaValidator.matchesJsonSchemaInClasspath("jsonschemaValidator/UserDetails.json"));
+		.body(JsonSchemaValidator.matchesJsonSchemaInClasspath("jsonschemavalidator/UserDetails.json"));
 	}
 
 }
