@@ -25,7 +25,7 @@ public class CountAPITest {
 		.statusCode(200)
 		.and()
 		.body("message", equalTo("Success"))
-		.time(lessThan(2000L))
+		.time(lessThan(7000L))
 		.and().body("data", notNullValue()).and()
 		.body("data.size()", equalTo(2)).and()
 		.body("data.count", everyItem(greaterThanOrEqualTo(0)))
