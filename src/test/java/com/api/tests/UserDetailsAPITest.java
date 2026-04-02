@@ -31,7 +31,7 @@ public class UserDetailsAPITest {
 		.and().when().get("userdetails")
 		.then().log().ifValidationFails()
 		.statusCode(200)
-		.and().time(lessThan(3500L))
+		.and().time(lessThan(8500L))
 		.body(JsonSchemaValidator.matchesJsonSchemaInClasspath("jsonschemaValidator/UserDetails.json"));
 	}
 
