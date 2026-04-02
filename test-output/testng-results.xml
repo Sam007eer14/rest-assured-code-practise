@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-04-02T09:00:39 IST" name="Default suite" finished-at="2026-04-02T09:00:42 IST" duration-ms="2713">
+    <groups>
+    </groups>
+    <test started-at="2026-04-02T09:00:39 IST" name="Default test" finished-at="2026-04-02T09:00:42 IST" duration-ms="2713">
+      <class name="com.api.tests.CountAPITest">
+        <test-method signature="verifyCountAPIResponse()[pri:0, instance:com.api.tests.CountAPITest@72e5a8e]" started-at="2026-04-02T09:00:39 IST" name="verifyCountAPIResponse" finished-at="2026-04-02T09:00:42 IST" duration-ms="2660" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCountAPIResponse -->
+      </class> <!-- com.api.tests.CountAPITest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
