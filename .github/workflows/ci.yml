@@ -35,9 +35,9 @@ jobs:
         cache: maven
 
     - name: Execute Test Automation Framework
-      run: mvn test -DsuiteXmlFile=testng.xml
+      run: mvn clean package -DsuiteXmlFile=testng.xml
 
-    # ✅ Upload Test Reports (IMPORTANT)
+    # ✅ Upload Test Reports
     - name: Upload Surefire Report
       if: always()
       uses: actions/upload-artifact@v4
@@ -45,8 +45,17 @@ jobs:
         name: SureFire Report
         path: target/surefire-reports/
         retention-days: 10
-
-    # ✅ Dependency graph (won’t fail build now)
+        
+    # ✅ Upload Build Artifact (JAR)
+    - name: Upload Build Artifact
+      if: always()
+      uses: actions/upload-artifact@v4
+      with:
+        name: Build Artifact
+        path: target/*.jar
+        retention-days: 10
+        
+    # ✅ Dependency graph (won’t fail build)
     - name: Update dependency graph
       if: always()
       continue-on-error: true
