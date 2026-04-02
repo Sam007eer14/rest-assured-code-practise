@@ -13,6 +13,20 @@ on:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
+  schedule: #set the CRON for Midnight IST --- UTC
+     - cron: "30 18 * * *" 
+     workflow_dispatch:
+    inputs:
+      suite:
+        description: "Select TestNG"
+        required: true
+        type: choice
+        default: "testng.xml"
+        type: choice
+        options:
+          - testng.xml
+          - regression.xml
+          - smoke.xml
 
 permissions:
   contents: read
@@ -35,7 +49,7 @@ jobs:
         cache: maven
 
     - name: Execute Test Automation Framework
-      run: mvn clean package -DsuiteXmlFile=testng.xml
+      run: mvn clean package -DsuiteXmlFile=${{ github.event.inputs.suite }}
 
     # ✅ Upload Test Reports
     - name: Upload Surefire Report
