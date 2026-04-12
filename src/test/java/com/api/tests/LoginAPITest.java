@@ -10,6 +10,7 @@ import org.testng.annotations.Test;
 
 import com.api.pojo.UserCredentials;
 import com.api.utils.ConfigManager2;
+import com.api.utils.SpecUtils;
 
 import io.restassured.http.ContentType;
 import io.restassured.module.jsv.JsonSchemaValidator;
@@ -21,24 +22,13 @@ public class LoginAPITest {
 		System.out.println("+++++++++++++++++++++++++++");
 		System.out.println("LoginAPITest is getting executed");
 		System.out.println(System.getProperty("env"));
-		
-		
 		UserCredentials userCreds = new UserCredentials("iamfd", "password");
-	
-		given().baseUri(ConfigManager2.getProperty("BASE_URI"))
-		.and().contentType(ContentType.JSON)
-		.and().accept(ContentType.JSON)
-		.and().body(userCreds)
-		.log().method()
+		given()
+		.spec(SpecUtils.requestSpec(userCreds))
 		.and().when().post("login")
-		.then()
-		.log().body()
-		.statusCode(200).time(lessThan(8000L))
+		.then().spec(SpecUtils.reponseSpec())
 		.and().body("message", equalTo("Success"))
-		.and().body(JsonSchemaValidator.matchesJsonSchemaInClasspath("jsonschemavalidator/LoginResponseValidation.json"));
-		
-		
-		
+		.and().body(JsonSchemaValidator.matchesJsonSchemaInClasspath("jsonschemavalidator/LoginResponseValidation.json"));	
 		
 	}
 
