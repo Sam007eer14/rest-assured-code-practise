@@ -56,9 +56,12 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
         cache: maven
-
+    - name: Default values for Execution
+      id: default
+      run: |
+            echo "suite = ${{ github.event.inputs.suite || 'testng.xml' }}" >> $GITHUB_OUTPUT
     - name: Execute Test Automation Framework
-      run: mvn clean package -DsuiteXmlFile=${{ github.event.inputs.suite }}
+      run: mvn clean package -DsuiteXmlFile=${{ steps.default.outputs.suite }}
 
     # ✅ Upload Test Reports
     - name: Upload Surefire Report
