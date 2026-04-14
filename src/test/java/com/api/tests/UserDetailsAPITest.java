@@ -18,13 +18,23 @@ import io.restassured.module.jsv.JsonSchemaValidator;
 
 public class UserDetailsAPITest {
 	
-	@Test
+	
+	
+	
+	
+	
+	
+	
+	
+	@Test(description="Verification if login is working", groups = {"api", "regression", "smoke"})
 	public void userDetailsAPITest() throws IOException {
 		System.out.println("+++++++++++++++++++++++++++");
 		System.out.println("userDetailsAPITest is getting executed");
 	    ConfigManager config = new ConfigManager();
 		Header authHeader = new Header("Authorization", AuthTokenProvider.getToken(Roles.ENG));
 		System.out.println("The Auth Code is " + AuthTokenProvider.getToken(Roles.ENG));
+		
+		
 		given().baseUri(config.getProperty("BASE_URI"))
 		.and().header(authHeader)
 		.and().accept(ContentType.JSON)
