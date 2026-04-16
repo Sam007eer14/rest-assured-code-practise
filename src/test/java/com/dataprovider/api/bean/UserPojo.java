@@ -1,4 +1,4 @@
-package com.demo.pojo;
+package com.dataprovider.api.bean;
 
 public class UserPojo {
 	private String username;
