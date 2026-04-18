@@ -1,0 +1,139 @@
+[33mcommit d5224a5d2f320eebc814d860e6c89e445d5677ea[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;32mfaker_practise[m[33m)[m
+Merge: aa6ca93 7ee6732
+Author: Sam007eer14 <sharief.k.sameer007@gmail.com>
+Date:   Sun Apr 12 15:43:15 2026 +0530
+
+    Merge pull request #1 from Sam007eer14/feature/spec-builder
+    
+    Created Spec Util to handle common api request config and common
+
+[33mcommit 7ee6732ef63da2f4d2b92c2b13183770851d2aff[m[33m ([m[1;31morigin/feature/spec-builder[m[33m, [m[1;32mfeature/spec-builder[m[33m)[m
+Author: Sameer <sharief.k.sameer007@gmail.com>
+Date:   Sun Apr 12 14:20:08 2026 +0530
+
+    Created Spec Util to handle common api request config and common
+    assertions.
+
+[33mcommit aa6ca93d9d4defc558e77a4ddb150241cf01d84b[m
+Author: Sam007eer14 <sharief.k.sameer007@gmail.com>
+Date:   Thu Apr 2 23:00:17 2026 +0530
+
+    Update ci.yml
+    
+    Updated workflow for having a manual checked
+
+[33mcommit 18a0cd3498581833a8eb2c9568ef1801aa286e1f[m
+Author: Sam007eer14 <sharief.k.sameer007@gmail.com>
+Date:   Thu Apr 2 22:53:47 2026 +0530
+
+    Update ci.yml
+    
+    Added workflow for the project
+
+[33mcommit deee74b561fa7c41c60581c1fdc60ac25e0c84be[m
+Author: Sam007eer14 <sharief.k.sameer007@gmail.com>
+Date:   Thu Apr 2 20:54:44 2026 +0530
+
+    Update ci.yml
+
+[33mcommit c941fa43f97e90ca1baa5acd142a3771fa8ab9f6[m
+Author: Sam007eer14 <sharief.k.sameer007@gmail.com>
+Date:   Thu Apr 2 20:49:06 2026 +0530
+
+    Update ci.yml
+    
+    Added the uploaded artifact action to be surefire--reports
+
+[33mcommit e5823ee844838b72c5a559b17f0563637fff8ce1[m
+Merge: 70eed64 3b37a10
+Author: Sameer <sharief.k.sameer007@gmail.com>
+Date:   Thu Apr 2 20:19:45 2026 +0530
+
+    Merge branch 'main' of https://github.com/Sam007eer14/rest-assured-code-practise.git into main
+
+[33mcommit 70eed64928c0de94b631b8ad593e5a3d9e33f5d7[m
+Author: Sameer <sharief.k.sameer007@gmail.com>
+Date:   Thu Apr 2 20:17:00 2026 +0530
+
+    Updated
+
+[33mcommit 026816e3958644f1d072aab64ff500d4d6a0c33f[m
+Merge: 4cfe3d7 34bfcfe
+Author: Sameer <sharief.k.sameer007@gmail.com>
+Date:   Thu Apr 2 20:15:55 2026 +0530
+
+    Resolved merge conflicts in UserDetailsAPITest.java
+
+[33mcommit 3b37a10b86d10ded4ba7a24140a4377e1b7e06fc[m
+Author: Sam007eer14 <sharief.k.sameer007@gmail.com>
+Date:   Thu Apr 2 20:13:12 2026 +0530
+
+    Update ci.yml
+
+[33mcommit 86f68be8fd6210edd6ec9d201923aff1479d348f[m
+Author: Sam007eer14 <sharief.k.sameer007@gmail.com>
+Date:   Thu Apr 2 20:04:03 2026 +0530
+
+    Update UserDetailsAPITest.java
+
+[33mcommit 3c44d0e8493ab3670dcf0907e5b4f86b03fa3964[m
+Author: Sam007eer14 <sharief.k.sameer007@gmail.com>
+Date:   Thu Apr 2 19:59:03 2026 +0530
+
+    Update LoginAPITest.java
+
+[33mcommit 34bfcfe4b8b634bf69d1b1b68160d4219aa549d0[m
+Author: Sam007eer14 <sharief.k.sameer007@gmail.com>
+Date:   Thu Apr 2 19:24:32 2026 +0530
+
+    Update UserDetailsAPITest.java
+
+[33mcommit ad9051a659fe5641665617aad7fe21eb4b4631c4[m
+Author: Sam007eer14 <sharief.k.sameer007@gmail.com>
+Date:   Thu Apr 2 19:24:13 2026 +0530
+
+    Update LoginAPITest.java
+    
+    updated time
+
+[33mcommit c3bce4f1b0dd43ace3b1147224c7e7ba6df49256[m
+Author: Sam007eer14 <sharief.k.sameer007@gmail.com>
+Date:   Thu Apr 2 19:23:42 2026 +0530
+
+    Update CountAPITest.java
+    
+    Updated time
+
+[33mcommit 2e5d5fa9cec71c6d3460adce54bceba749fa34ab[m
+Author: Sam007eer14 <sharief.k.sameer007@gmail.com>
+Date:   Thu Apr 2 19:15:56 2026 +0530
+
+    Update UserDetailsAPITest.java
+    
+    Added Time extra in the validation
+
+[33mcommit 4cfe3d7e0ccf6fef2af8f065e7cebd0dcebe3770[m
+Author: Sameer <sharief.k.sameer007@gmail.com>
+Date:   Thu Apr 2 19:12:31 2026 +0530
+
+    Updated Few files
+
+[33mcommit 0aeefafc6563c4e2969acb2c3f3d4b61a3932d6b[m
+Author: Sam007eer14 <sharief.k.sameer007@gmail.com>
+Date:   Thu Apr 2 19:04:13 2026 +0530
+
+    Create ci.yml
+    
+    Practise Code Run via Git Hub
+
+[33mcommit 4952fb335a8894f9d7acbf1ae697e68cd24e6301[m
+Author: Sameer <sharief.k.sameer007@gmail.com>
+Date:   Thu Apr 2 18:02:08 2026 +0530
+
+    Git First code Push
+
+[33mcommit 23d866fb6f10bd36691883f2578e9014c4483cbf[m
+Author: Sameer <sharief.k.sameer007@gmail.com>
+Date:   Thu Apr 2 17:55:43 2026 +0530
+
+    Initial commit

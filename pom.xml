@@ -32,6 +32,11 @@
             <artifactId>json-path</artifactId>
             <version>5.4.0</version>
         </dependency>
+        <dependency>
+    <groupId>net.datafaker</groupId>
+    <artifactId>datafaker</artifactId>
+    <version>2.2.2</version>
+</dependency>
 
         <!-- JSON Schema Validator -->
         <dependency>
