@@ -2,11 +2,11 @@
 
 <suite name="SuiteName">
 
-    <test name="TestName">
+    <test name="Inwarranty Flow - Data Driven Test">
         <classes>
-            <class name="com.api.tests.LoginAPITest"/>
+            <class name="com.api.tests.CreateJobAPITest"/>
             <class name="com.api.tests.CountAPITest"/>
-            <class name="com.api.tests.UserDetailsAPITest"/>
+            <class name="com.api.tests.CreateJobAPIFakeDataDrivenTest"/>
         </classes>
     </test>
 
