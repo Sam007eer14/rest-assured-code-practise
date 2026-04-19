@@ -35,7 +35,8 @@ on:
         options:
           - testng.xml
           - regression.xml
-          - smoke.xml
+          - data-driven-testing.xml
+          
 
 permissions:
   contents: read
