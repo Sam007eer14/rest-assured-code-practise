@@ -29,19 +29,47 @@ public class SpecUtils {
 		.build();
 		return request;
 	}
-public static RequestSpecification requestSpec(UserCredentials userCreds) {
+public static RequestSpecification requestSpec(Object param) {
 		
 		RequestSpecification request = new RequestSpecBuilder().
 		setBaseUri(ConfigManager2.getProperty("BASE_URI"))
-		.setBody(userCreds)
+		.setBody(param)
 		.setContentType(ContentType.JSON) 
 		.setAccept(ContentType.JSON)
 		.log(LogDetail.URI)
 		.log(LogDetail.METHOD)
 		.log(LogDetail.HEADERS)
+		.log(LogDetail.BODY)
 		.build();
 		return request;
 	}
+public static RequestSpecification requestSpecAuthAndBody(Object param, Roles role) {
+	
+	RequestSpecification request = new RequestSpecBuilder().
+	setBaseUri(ConfigManager2.getProperty("BASE_URI"))
+	.addHeader("Authorization", "Bearer " + AuthTokenProvider.getToken(role))
+	.setContentType(ContentType.JSON) 
+	.setBody(param)
+	.setAccept(ContentType.JSON)
+	.log(LogDetail.URI)
+	.log(LogDetail.METHOD)
+	.log(LogDetail.HEADERS)
+	.build();
+	return request;
+}
+public static RequestSpecification requestSpecBody(Object param) {
+	
+	RequestSpecification request = new RequestSpecBuilder().
+	setBaseUri(ConfigManager2.getProperty("BASE_URI"))
+	.setContentType(ContentType.JSON) 
+	.setBody(param)
+	.setAccept(ContentType.JSON)
+	.log(LogDetail.URI)
+	.log(LogDetail.METHOD)
+	.log(LogDetail.HEADERS)
+	.build();
+	return request;
+}
 public static ResponseSpecification reponseSpec() {
 	
 	ResponseSpecification response = new ResponseSpecBuilder().expectContentType(ContentType.JSON)
