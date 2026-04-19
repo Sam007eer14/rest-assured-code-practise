@@ -42,7 +42,12 @@
 			<artifactId>json-schema-validator</artifactId>
 			<version>5.4.0</version>
 		</dependency>
-
+ 
+ <dependency>
+    <groupId>net.datafaker</groupId>
+    <artifactId>datafaker</artifactId>
+    <version>2.2.2</version>
+</dependency>
 		<!-- XML Path -->
 		<dependency>
 			<groupId>io.rest-assured</groupId>
