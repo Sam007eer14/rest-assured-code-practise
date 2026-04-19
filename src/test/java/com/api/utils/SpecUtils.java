@@ -57,6 +57,19 @@ public static RequestSpecification requestSpecAuthAndBody(Object param, Roles ro
 	.build();
 	return request;
 }
+public static RequestSpecification requestSpecBody(Object param) {
+	
+	RequestSpecification request = new RequestSpecBuilder().
+	setBaseUri(ConfigManager2.getProperty("BASE_URI"))
+	.setContentType(ContentType.JSON) 
+	.setBody(param)
+	.setAccept(ContentType.JSON)
+	.log(LogDetail.URI)
+	.log(LogDetail.METHOD)
+	.log(LogDetail.HEADERS)
+	.build();
+	return request;
+}
 public static ResponseSpecification reponseSpec() {
 	
 	ResponseSpecification response = new ResponseSpecBuilder().expectContentType(ContentType.JSON)
