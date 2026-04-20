@@ -3,26 +3,18 @@
 
 # This workflow uses actions that are not certified by GitHub.
 # They are provided by a third-party and are governed by
-# separate terms of service, privacy policy, and support
-# documentation.
-
-# This workflow will build a Java project with Maven, and cache/restore any dependencies to improve the workflow execution time
-# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-java-with-maven
-
-# This workflow uses actions that are not certified by GitHub.
-# They are provided by a third-party and are governed by
-# separate terms of service, privacy policy, and support
-# documentation.
+# separate terms of service, privacy policy, and support documentation.
 
 name: Test Automation Workflow
 
 on:
   push:
     branches: [ "main" ]
+
   pull_request:
     branches: [ "main" ]
 
-  schedule: #set the CRON for Midnight IST --- UTC
+  schedule: # Midnight IST = 18:30 UTC
     - cron: "30 18 * * *"
 
   workflow_dispatch:
@@ -36,7 +28,6 @@ on:
           - testng.xml
           - regression.xml
           - data-driven-testing.xml
-          
 
 permissions:
   contents: read
@@ -45,45 +36,46 @@ permissions:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-    - name: Set up JDK 17
-      uses: actions/setup-java@v4
-      with:
-        java-version: '17'
-        distribution: 'temurin'
-        cache: maven
-    - name: Default values for Execution
-      id: default
-      run: |
-            echo "suite = ${{ github.event.inputs.suite || 'testng.xml' }}" >> $GITHUB_OUTPUT
-    - name: Execute Test Automation Framework
-      run: mvn clean package -DsuiteXmlFile=${{ steps.default.outputs.suite }}
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+          cache: maven
 
-    # ✅ Upload Test Reports
-    - name: Upload Surefire Report
-      if: always()
-      uses: actions/upload-artifact@v4
-      with:
-        name: SureFire Report
-        path: target/surefire-reports/
-        retention-days: 10
-        
-    # ✅ Upload Build Artifact (JAR)
-    - name: Upload Build Artifact
-      if: always()
-      uses: actions/upload-artifact@v4
-      with:
-        name: Build Artifact
-        path: target/*.jar
-        retention-days: 10
-        
-    # ✅ Dependency graph (won’t fail build)
-    - name: Update dependency graph
-      if: always()
-      continue-on-error: true
-      uses: advanced-security/maven-dependency-submission-action@v3
+      - name: Default values for Execution
+        id: default
+        run: |
+          echo "suite=${{ github.event.inputs.suite || 'testng.xml' }}" >> $GITHUB_OUTPUT
+
+      - name: Execute Test Automation Framework
+        run: mvn clean package -DsuiteXmlFile=${{ steps.default.outputs.suite }}
+
+      # Upload Test Reports
+      - name: Upload Surefire Report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: SureFire Report
+          path: target/surefire-reports/
+          retention-days: 10
+
+      # Upload Build Artifact (JAR)
+      - name: Upload Build Artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: Build Artifact
+          path: target/*.jar
+          retention-days: 10
+
+      # Dependency graph
+      - name: Update dependency graph
+        if: always()
+        continue-on-error: true
+        uses: advanced-security/maven-dependency-submission-action@v3
