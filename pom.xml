@@ -89,7 +89,7 @@
 				<version>3.2.5</version>
 				<configuration>
 					<suiteXmlFiles>
-						<suiteXmlFile>testng.xml</suiteXmlFile>
+						<suiteXmlFile>data-driven-testing.xml</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>

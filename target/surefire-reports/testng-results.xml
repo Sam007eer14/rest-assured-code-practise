@@ -1,29 +1,299 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="10" passed="5" failed="5" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-04-02T13:01:22 IST" name="SuiteName" finished-at="2026-04-02T13:01:26 IST" duration-ms="3427">
+  <suite started-at="2026-04-19T18:40:36 IST" name="SuiteName" finished-at="2026-04-19T18:40:50 IST" duration-ms="14217">
     <groups>
+      <group name="regression">
+        <method signature="CreateJobAPIFakeDataDrivenTest.createJobAPITest(com.api.pojo.CreateJobPayload)[pri:0, instance:com.api.tests.CreateJobAPIFakeDataDrivenTest@2145b572]" name="createJobAPITest" class="com.api.tests.CreateJobAPIFakeDataDrivenTest"/>
+      </group> <!-- regression -->
+      <group name="api">
+        <method signature="CreateJobAPIFakeDataDrivenTest.createJobAPITest(com.api.pojo.CreateJobPayload)[pri:0, instance:com.api.tests.CreateJobAPIFakeDataDrivenTest@2145b572]" name="createJobAPITest" class="com.api.tests.CreateJobAPIFakeDataDrivenTest"/>
+      </group> <!-- api -->
     </groups>
-    <test started-at="2026-04-02T13:01:22 IST" name="TestName" finished-at="2026-04-02T13:01:26 IST" duration-ms="3427">
-      <class name="com.api.tests.UserDetailsAPITest">
-        <test-method signature="userDetailsAPITest()[pri:0, instance:com.api.tests.UserDetailsAPITest@3427b02d]" started-at="2026-04-02T13:01:25 IST" name="userDetailsAPITest" finished-at="2026-04-02T13:01:26 IST" duration-ms="262" status="PASS">
+    <test started-at="2026-04-19T18:40:36 IST" name="Inwarranty Flow - Data Driven Test" finished-at="2026-04-19T18:40:50 IST" duration-ms="14217">
+      <class name="com.api.tests.CreateJobAPIFakeDataDrivenTest">
+        <test-method signature="createJobAPITest(com.api.pojo.CreateJobPayload)[pri:0, instance:com.api.tests.CreateJobAPIFakeDataDrivenTest@2145b572]" started-at="2026-04-19T18:40:36 IST" name="createJobAPITest" description="Verifying if create job api is able to create Inwarranty job" data-provider="CreateJobAPIFakerDataProvider" finished-at="2026-04-19T18:40:40 IST" duration-ms="3748" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=1, customer=Customer[first_name=Tara, last_name=Achari, mobile_number=7092167316, mobile_number_alt=7045117408, email_id=daksha.kaul@hotmail.com, email_id_alt=tara.singh@hotmail.com], customer_address=CustomerAddress[flat_number=624, apartment_name=69405 Gupta Island, street_name=72743 Khatri Cliff, landmark=73946 Pillai Crossing, area=547 Dhawan Overpass, pincode=1451, country=Philippines, state=Haryana], customer_product=CustomerProduct[dop=2026-04-09T13:10:36.773162400Z, serial_number=22683637899932, imei1=22683637899932, imei2=22683637899932, popurl=https://www.sunita-achari.biz/voluptas/magniratione#aut, product_id=1, mst_model_id=2], problems=[Problem[id=1, remark=Fugiat in nostrum voluptates inventore eaque laudantium cupiditate voluptas fuga.]]]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- userDetailsAPITest -->
-      </class> <!-- com.api.tests.UserDetailsAPITest -->
-      <class name="com.api.tests.CountAPITest">
-        <test-method signature="verifyCountAPIResponse()[pri:0, instance:com.api.tests.CountAPITest@28eaa59a]" started-at="2026-04-02T13:01:25 IST" name="verifyCountAPIResponse" finished-at="2026-04-02T13:01:25 IST" duration-ms="252" status="PASS">
+        </test-method> <!-- createJobAPITest -->
+        <test-method signature="createJobAPITest(com.api.pojo.CreateJobPayload)[pri:0, instance:com.api.tests.CreateJobAPIFakeDataDrivenTest@2145b572]" started-at="2026-04-19T18:40:36 IST" name="createJobAPITest" description="Verifying if create job api is able to create Inwarranty job" data-provider="CreateJobAPIFakerDataProvider" finished-at="2026-04-19T18:40:40 IST" duration-ms="3792" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=1, customer=Customer[first_name=Vasanti, last_name=Prajapat, mobile_number=7000733573, mobile_number_alt=7015861849, email_id=dipesh.kaniyar@hotmail.com, email_id_alt=aarya.bharadwaj@hotmail.com], customer_address=CustomerAddress[flat_number=786, apartment_name=309 Agrata Courts, street_name=329 Khatri Well, landmark=26701 Varman Junctions, area=092 Dutta Field, pincode=9469, country=Djibouti, state=Punjab], customer_product=CustomerProduct[dop=2026-04-09T13:10:36.776158700Z, serial_number=65391445618314, imei1=65391445618314, imei2=65391445618314, popurl=http://www.gemine-panicker.co.in:23219/#laborum, product_id=1, mst_model_id=2], problems=[Problem[id=13, remark=Reiciendis nihil rem autem voluptates maxime maxime.]]]]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[1 expectation failed.
+Expected status code <200> but was <500>.
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <500>.
+
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$12.call(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:101)
+at io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
+at com.api.tests.CreateJobAPIFakeDataDrivenTest.createJobAPITest(CreateJobAPIFakeDataDrivenTest.java:31)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyCountAPIResponse -->
-      </class> <!-- com.api.tests.CountAPITest -->
-      <class name="com.api.tests.LoginAPITest">
-        <test-method signature="loginAPI_Test()[pri:0, instance:com.api.tests.LoginAPITest@72f926e6]" started-at="2026-04-02T13:01:22 IST" name="loginAPI_Test" finished-at="2026-04-02T13:01:25 IST" duration-ms="2870" status="PASS">
+        </test-method> <!-- createJobAPITest -->
+        <test-method signature="createJobAPITest(com.api.pojo.CreateJobPayload)[pri:0, instance:com.api.tests.CreateJobAPIFakeDataDrivenTest@2145b572]" started-at="2026-04-19T18:40:36 IST" name="createJobAPITest" description="Verifying if create job api is able to create Inwarranty job" data-provider="CreateJobAPIFakerDataProvider" finished-at="2026-04-19T18:40:43 IST" duration-ms="6841" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=1, customer=Customer[first_name=Prayag, last_name=Devar, mobile_number=7071310978, mobile_number_alt=7036236751, email_id=amaranaath.marar@yahoo.co.in, email_id_alt=dron.sinha@rediffmail.com], customer_address=CustomerAddress[flat_number=857, apartment_name=485 Ahuja Spurs, street_name=0025 Shukla Inlet, landmark=932 Chinmayanand Courts, area=040 Ranjit Mount, pincode=3570, country=Cape Verde, state=Punjab], customer_product=CustomerProduct[dop=2026-04-09T13:10:36.780139Z, serial_number=30212116456714, imei1=30212116456714, imei2=30212116456714, popurl=http://www.nawal-ganaka.com/?mollitia=natus&dolorum=hic#repellat, product_id=1, mst_model_id=2], problems=[Problem[id=21, remark=Natus quas quas ullam commodi earum expedita nisi itaque.]]]]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[1 expectation failed.
+Expected status code <200> but was <500>.
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <500>.
+
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$12.call(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:101)
+at io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
+at com.api.tests.CreateJobAPIFakeDataDrivenTest.createJobAPITest(CreateJobAPIFakeDataDrivenTest.java:31)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginAPI_Test -->
-      </class> <!-- com.api.tests.LoginAPITest -->
-    </test> <!-- TestName -->
+        </test-method> <!-- createJobAPITest -->
+        <test-method signature="createJobAPITest(com.api.pojo.CreateJobPayload)[pri:0, instance:com.api.tests.CreateJobAPIFakeDataDrivenTest@2145b572]" started-at="2026-04-19T18:40:36 IST" name="createJobAPITest" description="Verifying if create job api is able to create Inwarranty job" data-provider="CreateJobAPIFakerDataProvider" finished-at="2026-04-19T18:40:46 IST" duration-ms="9808" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=1, customer=Customer[first_name=Vimal, last_name=Arora, mobile_number=7037886767, mobile_number_alt=7079011761, email_id=gangesh.kocchar@rediffmail.com, email_id_alt=subhasini.namboothiri@gmail.com], customer_address=CustomerAddress[flat_number=767, apartment_name=6607 Joshi Fall, street_name=7224 Jain Well, landmark=27290 Eekalabya Stravenue, area=20757 Ajit Underpass, pincode=5551, country=Morocco, state=Meghalaya], customer_product=CustomerProduct[dop=2026-04-09T13:10:36.775153500Z, serial_number=54514221330640, imei1=54514221330640, imei2=54514221330640, popurl=https://www.chandraketu-iyer.com:17690/#esse, product_id=1, mst_model_id=2], problems=[Problem[id=23, remark=Temporibus illum vel necessitatibus natus.]]]]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[1 expectation failed.
+Expected status code <200> but was <500>.
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <500>.
+
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$12.call(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:101)
+at io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
+at com.api.tests.CreateJobAPIFakeDataDrivenTest.createJobAPITest(CreateJobAPIFakeDataDrivenTest.java:31)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createJobAPITest -->
+        <test-method signature="createJobAPITest(com.api.pojo.CreateJobPayload)[pri:0, instance:com.api.tests.CreateJobAPIFakeDataDrivenTest@2145b572]" started-at="2026-04-19T18:40:36 IST" name="createJobAPITest" description="Verifying if create job api is able to create Inwarranty job" data-provider="CreateJobAPIFakerDataProvider" finished-at="2026-04-19T18:40:41 IST" duration-ms="4640" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=1, customer=Customer[first_name=Rohana, last_name=Khanna, mobile_number=7095327132, mobile_number_alt=7036454531, email_id=lai.pothuvaal@gmail.com, email_id_alt=jyotis.tandon@hotmail.com], customer_address=CustomerAddress[flat_number=631, apartment_name=381 Dhaanyalakshmi Ports, street_name=7130 Nirbhay Throughway, landmark=86591 Nair Islands, area=9201 Arya Harbors, pincode=7392, country=El Salvador, state=Lakshadweep], customer_product=CustomerProduct[dop=2026-04-09T13:10:36.771179Z, serial_number=40353320105322, imei1=40353320105322, imei2=40353320105322, popurl=http://www.akshaj-deshpande.co.in:627/molestiae/sit#beatae, product_id=1, mst_model_id=2], problems=[Problem[id=2, remark=Esse incidunt aspernatur perferendis eveniet esse.]]]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createJobAPITest -->
+        <test-method signature="createJobAPITest(com.api.pojo.CreateJobPayload)[pri:0, instance:com.api.tests.CreateJobAPIFakeDataDrivenTest@2145b572]" started-at="2026-04-19T18:40:36 IST" name="createJobAPITest" description="Verifying if create job api is able to create Inwarranty job" data-provider="CreateJobAPIFakerDataProvider" finished-at="2026-04-19T18:40:42 IST" duration-ms="5757" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=1, customer=Customer[first_name=Shrishti, last_name=Varrier, mobile_number=7014302980, mobile_number_alt=7034159807, email_id=gudakesha.nambeesan@rediffmail.com, email_id_alt=gobinda.varman@yahoo.co.in], customer_address=CustomerAddress[flat_number=461, apartment_name=02428 Abbott Curve, street_name=790 Dhanapati Plains, landmark=95606 Iyengar Corners, area=4815 Deepan Plains, pincode=1841, country=Cote d'Ivoire, state=Uttar Pradesh], customer_product=CustomerProduct[dop=2026-04-09T13:10:36.778143800Z, serial_number=87668028594011, imei1=87668028594011, imei2=87668028594011, popurl=https://www.aasa-kapoor.com/sequi/autemmagni, product_id=1, mst_model_id=2], problems=[Problem[id=26, remark=Praesentium pariatur nobis illum enim eligendi velit repellat.]]]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createJobAPITest -->
+        <test-method signature="createJobAPITest(com.api.pojo.CreateJobPayload)[pri:0, instance:com.api.tests.CreateJobAPIFakeDataDrivenTest@2145b572]" started-at="2026-04-19T18:40:36 IST" name="createJobAPITest" description="Verifying if create job api is able to create Inwarranty job" data-provider="CreateJobAPIFakerDataProvider" finished-at="2026-04-19T18:40:44 IST" duration-ms="7909" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=1, customer=Customer[first_name=Vasudeva, last_name=Sinha, mobile_number=7065676773, mobile_number_alt=7046125791, email_id=vrund.asan@gmail.com, email_id_alt=aarya.ganaka@hotmail.com], customer_address=CustomerAddress[flat_number=935, apartment_name=20526 Bhadraksh Vista, street_name=93684 Sinha Mountains, landmark=842 Jha Route, area=8189 Kaul Bridge, pincode=4711, country=Liberia, state=Jammu and Kashmir], customer_product=CustomerProduct[dop=2026-04-09T13:10:36.777147400Z, serial_number=65371982713121, imei1=65371982713121, imei2=65371982713121, popurl=https://www.prasad-khan.name:23271/, product_id=1, mst_model_id=2], problems=[Problem[id=9, remark=Cupiditate voluptates qui ab commodi.]]]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createJobAPITest -->
+        <test-method signature="createJobAPITest(com.api.pojo.CreateJobPayload)[pri:0, instance:com.api.tests.CreateJobAPIFakeDataDrivenTest@2145b572]" started-at="2026-04-19T18:40:36 IST" name="createJobAPITest" description="Verifying if create job api is able to create Inwarranty job" data-provider="CreateJobAPIFakerDataProvider" finished-at="2026-04-19T18:40:41 IST" duration-ms="4839" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=1, customer=Customer[first_name=Ganaka, last_name=Kaul, mobile_number=7091056376, mobile_number_alt=7003965050, email_id=brajesh.pilla@hotmail.com, email_id_alt=manik.khatri@yahoo.co.in], customer_address=CustomerAddress[flat_number=005, apartment_name=94140 Bhuvanesh Corner, street_name=9674 Umang Port, landmark=803 Shresthi Estates, area=054 Guha Fields, pincode=4320, country=Tunisia, state=Lakshadweep], customer_product=CustomerProduct[dop=2026-04-09T13:10:36.734312300Z, serial_number=86892320766404, imei1=86892320766404, imei2=86892320766404, popurl=https://www.bishnu-bandopadhyay.net:37016/incidunt/corporissed?earum=inventore&enim=tenetur#iusto, product_id=1, mst_model_id=2], problems=[Problem[id=4, remark=Ipsam dolores et deleniti iusto.]]]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createJobAPITest -->
+        <test-method signature="createJobAPITest(com.api.pojo.CreateJobPayload)[pri:0, instance:com.api.tests.CreateJobAPIFakeDataDrivenTest@2145b572]" started-at="2026-04-19T18:40:36 IST" name="createJobAPITest" description="Verifying if create job api is able to create Inwarranty job" data-provider="CreateJobAPIFakerDataProvider" finished-at="2026-04-19T18:40:50 IST" duration-ms="13802" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=1, customer=Customer[first_name=Dharani, last_name=Gowda, mobile_number=7086798819, mobile_number_alt=7071685478, email_id=suma.prajapat@gmail.com, email_id_alt=saraswati.kocchar@gmail.com], customer_address=CustomerAddress[flat_number=845, apartment_name=422 Khanna Path, street_name=65449 Acharya Bridge, landmark=7610 Sushma Row, area=452 Menon Trafficway, pincode=7546, country=Tanzania, state=Rajasthan], customer_product=CustomerProduct[dop=2026-04-09T13:10:36.774157200Z, serial_number=81521606412288, imei1=81521606412288, imei2=81521606412288, popurl=http://www.agastya-jha.biz/?voluptates=unde&aperiam=quo, product_id=1, mst_model_id=2], problems=[Problem[id=18, remark=Tempora eligendi consectetur est magni nostrum explicabo quaerat vel.]]]]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[1 expectation failed.
+Expected status code <200> but was <500>.
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <500>.
+
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$12.call(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:101)
+at io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
+at com.api.tests.CreateJobAPIFakeDataDrivenTest.createJobAPITest(CreateJobAPIFakeDataDrivenTest.java:31)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createJobAPITest -->
+        <test-method signature="createJobAPITest(com.api.pojo.CreateJobPayload)[pri:0, instance:com.api.tests.CreateJobAPIFakeDataDrivenTest@2145b572]" started-at="2026-04-19T18:40:36 IST" name="createJobAPITest" description="Verifying if create job api is able to create Inwarranty job" data-provider="CreateJobAPIFakerDataProvider" finished-at="2026-04-19T18:40:42 IST" duration-ms="5813" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=1, customer=Customer[first_name=Chandraswaroopa, last_name=Varma, mobile_number=7046457749, mobile_number_alt=7001679163, email_id=varalakshmi.namboothiri@gmail.com, email_id_alt=bhoopati.bandopadhyay@yahoo.co.in], customer_address=CustomerAddress[flat_number=362, apartment_name=75922 Goutam Ridge, street_name=85494 Ghanashyam Light, landmark=54958 Suman Point, area=5278 Chakravarti Ridge, pincode=2676, country=Solomon Islands, state=Bihar], customer_product=CustomerProduct[dop=2026-04-09T13:10:36.777147400Z, serial_number=97528762100590, imei1=97528762100590, imei2=97528762100590, popurl=https://www.gandharva-verma.in/#laborum, product_id=1, mst_model_id=2], problems=[Problem[id=19, remark=Consequuntur veritatis numquam ex dolorum.]]]]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[1 expectation failed.
+Expected response time was not a value less than <2000L> milliseconds, was 2169 milliseconds (2169 milliseconds).]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 1 expectation failed.
+Expected response time was not a value less than <2000L> milliseconds, was 2169 milliseconds (2169 milliseconds).
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$12.call(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:101)
+at io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
+at com.api.tests.CreateJobAPIFakeDataDrivenTest.createJobAPITest(CreateJobAPIFakeDataDrivenTest.java:31)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createJobAPITest -->
+      </class> <!-- com.api.tests.CreateJobAPIFakeDataDrivenTest -->
+    </test> <!-- Inwarranty Flow - Data Driven Test -->
   </suite> <!-- SuiteName -->
 </testng-results>

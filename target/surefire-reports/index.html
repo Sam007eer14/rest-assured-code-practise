@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 5 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-SuiteName" class="navigator-link">
-              <span class="suite-name border-passed">SuiteName</span>
+              <span class="suite-name border-failed">SuiteName</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-SuiteName" class="navigator-link ">
-                    <span>D:\SDET_Course_Notes\APICourceCode\RestAssuredCodePractise\testng.xml</span>
+                    <span>D:\SDET_Course_Notes\APICourceCode\RestAssuredCodePractise\data-driven-testing.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -60,7 +60,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="group-SuiteName" class="navigator-link ">
-                    <span>0 groups</span>
+                    <span>2 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,41 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">10 methods, 5 failed,   5 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-SuiteName" class="hide-methods failed suite-SuiteName"> (hide)</a> <!-- hide-methods failed suite-SuiteName -->
+                      <a href="#" panel-name="suite-SuiteName" class="show-methods failed suite-SuiteName"> (show)</a> <!-- show-methods failed suite-SuiteName -->
+                    </span>
+                    <div class="method-list-content failed suite-SuiteName">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SuiteName" title="com.api.tests.CreateJobAPIFakeDataDrivenTest" class="method navigator-link" hash-for-method="createJobAPITest(CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=...)">createJobAPITest(CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SuiteName" title="com.api.tests.CreateJobAPIFakeDataDrivenTest" class="method navigator-link" hash-for-method="createJobAPITest(CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=...)">createJobAPITest(CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SuiteName" title="com.api.tests.CreateJobAPIFakeDataDrivenTest" class="method navigator-link" hash-for-method="createJobAPITest(CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=...)">createJobAPITest(CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SuiteName" title="com.api.tests.CreateJobAPIFakeDataDrivenTest" class="method navigator-link" hash-for-method="createJobAPITest(CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=...)">createJobAPITest(CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SuiteName" title="com.api.tests.CreateJobAPIFakeDataDrivenTest" class="method navigator-link" hash-for-method="createJobAPITest(CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=...)">createJobAPITest(CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-SuiteName -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,17 +137,27 @@
                     <div class="method-list-content passed suite-SuiteName">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-SuiteName" title="com.api.tests.LoginAPITest" class="method navigator-link" hash-for-method="loginAPI_Test">loginAPI_Test</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-SuiteName" title="com.api.tests.CreateJobAPIFakeDataDrivenTest" class="method navigator-link" hash-for-method="createJobAPITest(CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=...)">createJobAPITest(CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-SuiteName" title="com.api.tests.UserDetailsAPITest" class="method navigator-link" hash-for-method="userDetailsAPITest">userDetailsAPITest</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-SuiteName" title="com.api.tests.CreateJobAPIFakeDataDrivenTest" class="method navigator-link" hash-for-method="createJobAPITest(CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=...)">createJobAPITest(CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-SuiteName" title="com.api.tests.CountAPITest" class="method navigator-link" hash-for-method="verifyCountAPIResponse">verifyCountAPIResponse</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-SuiteName" title="com.api.tests.CreateJobAPIFakeDataDrivenTest" class="method navigator-link" hash-for-method="createJobAPITest(CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=...)">createJobAPITest(CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SuiteName" title="com.api.tests.CreateJobAPIFakeDataDrivenTest" class="method navigator-link" hash-for-method="createJobAPITest(CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=...)">createJobAPITest(CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SuiteName" title="com.api.tests.CreateJobAPIFakeDataDrivenTest" class="method navigator-link" hash-for-method="createJobAPITest(CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=...)">createJobAPITest(CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-SuiteName -->
@@ -128,47 +172,194 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-SuiteName" class="panel SuiteName">
-          <div class="suite-SuiteName-class-passed">
+          <div class="suite-SuiteName-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.api.tests.CountAPITest</span>
+              <img src="failed.png"/>
+              <span class="class-name">com.api.tests.CreateJobAPIFakeDataDrivenTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyCountAPIResponse">
-                  </a> <!-- verifyCountAPIResponse -->
-                  <span class="method-name">verifyCountAPIResponse</span>
+                  <a name="createJobAPITest(CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=...)">
+                  </a> <!-- createJobAPITest(CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=...) -->
+                  <span class="method-name">createJobAPITest</span>
+                  <span class="parameters">(CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=1, customer=Customer[first_name=Dharani, last_name=Gowda, mobile_number=7086798819, mobile_number_alt=7071685478, email_id=suma.prajapat@gmail.com, email_id_alt=saraswati.kocchar@gmail.com], customer_address=CustomerAddress[flat_number=845, apartment_name=422 Khanna Path, street_name=65449 Acharya Bridge, landmark=7610 Sushma Row, area=452 Menon Trafficway, pincode=7546, country=Tanzania, state=Rajasthan], customer_product=CustomerProduct[dop=2026-04-09T13:10:36.774157200Z, serial_number=81521606412288, imei1=81521606412288, imei2=81521606412288, popurl=http://www.agastya-jha.biz/?voluptates=unde&aperiam=quo, product_id=1, mst_model_id=2], problems=[Problem[id=18, remark=Tempora eligendi consectetur est magni nostrum explicabo quaerat vel.]]])</span>
+                  <div class="stack-trace">java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;500&gt;.
+
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$12.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:101)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
+	at com.api.tests.CreateJobAPIFakeDataDrivenTest.createJobAPITest(CreateJobAPIFakeDataDrivenTest.java:31)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 11 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verifying if create job api is able to create Inwarranty job)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createJobAPITest(CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=...)">
+                  </a> <!-- createJobAPITest(CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=...) -->
+                  <span class="method-name">createJobAPITest</span>
+                  <span class="parameters">(CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=1, customer=Customer[first_name=Chandraswaroopa, last_name=Varma, mobile_number=7046457749, mobile_number_alt=7001679163, email_id=varalakshmi.namboothiri@gmail.com, email_id_alt=bhoopati.bandopadhyay@yahoo.co.in], customer_address=CustomerAddress[flat_number=362, apartment_name=75922 Goutam Ridge, street_name=85494 Ghanashyam Light, landmark=54958 Suman Point, area=5278 Chakravarti Ridge, pincode=2676, country=Solomon Islands, state=Bihar], customer_product=CustomerProduct[dop=2026-04-09T13:10:36.777147400Z, serial_number=97528762100590, imei1=97528762100590, imei2=97528762100590, popurl=https://www.gandharva-verma.in/#laborum, product_id=1, mst_model_id=2], problems=[Problem[id=19, remark=Consequuntur veritatis numquam ex dolorum.]]])</span>
+                  <div class="stack-trace">java.lang.AssertionError: 1 expectation failed.
+Expected response time was not a value less than &lt;2000L&gt; milliseconds, was 2169 milliseconds (2169 milliseconds).
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$12.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:101)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
+	at com.api.tests.CreateJobAPIFakeDataDrivenTest.createJobAPITest(CreateJobAPIFakeDataDrivenTest.java:31)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 11 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verifying if create job api is able to create Inwarranty job)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createJobAPITest(CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=...)">
+                  </a> <!-- createJobAPITest(CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=...) -->
+                  <span class="method-name">createJobAPITest</span>
+                  <span class="parameters">(CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=1, customer=Customer[first_name=Vasanti, last_name=Prajapat, mobile_number=7000733573, mobile_number_alt=7015861849, email_id=dipesh.kaniyar@hotmail.com, email_id_alt=aarya.bharadwaj@hotmail.com], customer_address=CustomerAddress[flat_number=786, apartment_name=309 Agrata Courts, street_name=329 Khatri Well, landmark=26701 Varman Junctions, area=092 Dutta Field, pincode=9469, country=Djibouti, state=Punjab], customer_product=CustomerProduct[dop=2026-04-09T13:10:36.776158700Z, serial_number=65391445618314, imei1=65391445618314, imei2=65391445618314, popurl=http://www.gemine-panicker.co.in:23219/#laborum, product_id=1, mst_model_id=2], problems=[Problem[id=13, remark=Reiciendis nihil rem autem voluptates maxime maxime.]]])</span>
+                  <div class="stack-trace">java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;500&gt;.
+
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$12.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:101)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
+	at com.api.tests.CreateJobAPIFakeDataDrivenTest.createJobAPITest(CreateJobAPIFakeDataDrivenTest.java:31)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 11 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verifying if create job api is able to create Inwarranty job)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createJobAPITest(CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=...)">
+                  </a> <!-- createJobAPITest(CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=...) -->
+                  <span class="method-name">createJobAPITest</span>
+                  <span class="parameters">(CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=1, customer=Customer[first_name=Prayag, last_name=Devar, mobile_number=7071310978, mobile_number_alt=7036236751, email_id=amaranaath.marar@yahoo.co.in, email_id_alt=dron.sinha@rediffmail.com], customer_address=CustomerAddress[flat_number=857, apartment_name=485 Ahuja Spurs, street_name=0025 Shukla Inlet, landmark=932 Chinmayanand Courts, area=040 Ranjit Mount, pincode=3570, country=Cape Verde, state=Punjab], customer_product=CustomerProduct[dop=2026-04-09T13:10:36.780139Z, serial_number=30212116456714, imei1=30212116456714, imei2=30212116456714, popurl=http://www.nawal-ganaka.com/?mollitia=natus&dolorum=hic#repellat, product_id=1, mst_model_id=2], problems=[Problem[id=21, remark=Natus quas quas ullam commodi earum expedita nisi itaque.]]])</span>
+                  <div class="stack-trace">java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;500&gt;.
+
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$12.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:101)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
+	at com.api.tests.CreateJobAPIFakeDataDrivenTest.createJobAPITest(CreateJobAPIFakeDataDrivenTest.java:31)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 11 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verifying if create job api is able to create Inwarranty job)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createJobAPITest(CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=...)">
+                  </a> <!-- createJobAPITest(CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=...) -->
+                  <span class="method-name">createJobAPITest</span>
+                  <span class="parameters">(CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=1, customer=Customer[first_name=Vimal, last_name=Arora, mobile_number=7037886767, mobile_number_alt=7079011761, email_id=gangesh.kocchar@rediffmail.com, email_id_alt=subhasini.namboothiri@gmail.com], customer_address=CustomerAddress[flat_number=767, apartment_name=6607 Joshi Fall, street_name=7224 Jain Well, landmark=27290 Eekalabya Stravenue, area=20757 Ajit Underpass, pincode=5551, country=Morocco, state=Meghalaya], customer_product=CustomerProduct[dop=2026-04-09T13:10:36.775153500Z, serial_number=54514221330640, imei1=54514221330640, imei2=54514221330640, popurl=https://www.chandraketu-iyer.com:17690/#esse, product_id=1, mst_model_id=2], problems=[Problem[id=23, remark=Temporibus illum vel necessitatibus natus.]]])</span>
+                  <div class="stack-trace">java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;500&gt;.
+
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$12.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:101)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
+	at com.api.tests.CreateJobAPIFakeDataDrivenTest.createJobAPITest(CreateJobAPIFakeDataDrivenTest.java:31)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 11 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verifying if create job api is able to create Inwarranty job)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-SuiteName-class-passed -->
+          </div> <!-- suite-SuiteName-class-failed -->
           <div class="suite-SuiteName-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.api.tests.LoginAPITest</span>
+              <span class="class-name">com.api.tests.CreateJobAPIFakeDataDrivenTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="loginAPI_Test">
-                  </a> <!-- loginAPI_Test -->
-                  <span class="method-name">loginAPI_Test</span>
+                  <a name="createJobAPITest(CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=...)">
+                  </a> <!-- createJobAPITest(CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=...) -->
+                  <span class="method-name">createJobAPITest</span>
+                  <span class="parameters">(CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=1, customer=Customer[first_name=Rohana, last_name=Khanna, mobile_number=7095327132, mobile_number_alt=7036454531, email_id=lai.pothuvaal@gmail.com, email_id_alt=jyotis.tandon@hotmail.com], customer_address=CustomerAddress[flat_number=631, apartment_name=381 Dhaanyalakshmi Ports, street_name=7130 Nirbhay Throughway, landmark=86591 Nair Islands, area=9201 Arya Harbors, pincode=7392, country=El Salvador, state=Lakshadweep], customer_product=CustomerProduct[dop=2026-04-09T13:10:36.771179Z, serial_number=40353320105322, imei1=40353320105322, imei2=40353320105322, popurl=http://www.akshaj-deshpande.co.in:627/molestiae/sit#beatae, product_id=1, mst_model_id=2], problems=[Problem[id=2, remark=Esse incidunt aspernatur perferendis eveniet esse.]]])</span>
+                  <em>
+(Verifying if create job api is able to create Inwarranty job)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-SuiteName-class-passed -->
-          <div class="suite-SuiteName-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.api.tests.UserDetailsAPITest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="userDetailsAPITest">
-                  </a> <!-- userDetailsAPITest -->
-                  <span class="method-name">userDetailsAPITest</span>
+                  <a name="createJobAPITest(CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=...)">
+                  </a> <!-- createJobAPITest(CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=...) -->
+                  <span class="method-name">createJobAPITest</span>
+                  <span class="parameters">(CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=1, customer=Customer[first_name=Shrishti, last_name=Varrier, mobile_number=7014302980, mobile_number_alt=7034159807, email_id=gudakesha.nambeesan@rediffmail.com, email_id_alt=gobinda.varman@yahoo.co.in], customer_address=CustomerAddress[flat_number=461, apartment_name=02428 Abbott Curve, street_name=790 Dhanapati Plains, landmark=95606 Iyengar Corners, area=4815 Deepan Plains, pincode=1841, country=Cote d'Ivoire, state=Uttar Pradesh], customer_product=CustomerProduct[dop=2026-04-09T13:10:36.778143800Z, serial_number=87668028594011, imei1=87668028594011, imei2=87668028594011, popurl=https://www.aasa-kapoor.com/sequi/autemmagni, product_id=1, mst_model_id=2], problems=[Problem[id=26, remark=Praesentium pariatur nobis illum enim eligendi velit repellat.]]])</span>
+                  <em>
+(Verifying if create job api is able to create Inwarranty job)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createJobAPITest(CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=...)">
+                  </a> <!-- createJobAPITest(CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=...) -->
+                  <span class="method-name">createJobAPITest</span>
+                  <span class="parameters">(CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=1, customer=Customer[first_name=Vasudeva, last_name=Sinha, mobile_number=7065676773, mobile_number_alt=7046125791, email_id=vrund.asan@gmail.com, email_id_alt=aarya.ganaka@hotmail.com], customer_address=CustomerAddress[flat_number=935, apartment_name=20526 Bhadraksh Vista, street_name=93684 Sinha Mountains, landmark=842 Jha Route, area=8189 Kaul Bridge, pincode=4711, country=Liberia, state=Jammu and Kashmir], customer_product=CustomerProduct[dop=2026-04-09T13:10:36.777147400Z, serial_number=65371982713121, imei1=65371982713121, imei2=65371982713121, popurl=https://www.prasad-khan.name:23271/, product_id=1, mst_model_id=2], problems=[Problem[id=9, remark=Cupiditate voluptates qui ab commodi.]]])</span>
+                  <em>
+(Verifying if create job api is able to create Inwarranty job)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createJobAPITest(CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=...)">
+                  </a> <!-- createJobAPITest(CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=...) -->
+                  <span class="method-name">createJobAPITest</span>
+                  <span class="parameters">(CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=1, customer=Customer[first_name=Ganaka, last_name=Kaul, mobile_number=7091056376, mobile_number_alt=7003965050, email_id=brajesh.pilla@hotmail.com, email_id_alt=manik.khatri@yahoo.co.in], customer_address=CustomerAddress[flat_number=005, apartment_name=94140 Bhuvanesh Corner, street_name=9674 Umang Port, landmark=803 Shresthi Estates, area=054 Guha Fields, pincode=4320, country=Tunisia, state=Lakshadweep], customer_product=CustomerProduct[dop=2026-04-09T13:10:36.734312300Z, serial_number=86892320766404, imei1=86892320766404, imei2=86892320766404, popurl=https://www.bishnu-bandopadhyay.net:37016/incidunt/corporissed?earum=inventore&enim=tenetur#iusto, product_id=1, mst_model_id=2], problems=[Problem[id=4, remark=Ipsam dolores et deleniti iusto.]]])</span>
+                  <em>
+(Verifying if create job api is able to create Inwarranty job)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createJobAPITest(CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=...)">
+                  </a> <!-- createJobAPITest(CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=...) -->
+                  <span class="method-name">createJobAPITest</span>
+                  <span class="parameters">(CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=1, customer=Customer[first_name=Tara, last_name=Achari, mobile_number=7092167316, mobile_number_alt=7045117408, email_id=daksha.kaul@hotmail.com, email_id_alt=tara.singh@hotmail.com], customer_address=CustomerAddress[flat_number=624, apartment_name=69405 Gupta Island, street_name=72743 Khatri Cliff, landmark=73946 Pillai Crossing, area=547 Dhawan Overpass, pincode=1451, country=Philippines, state=Haryana], customer_product=CustomerProduct[dop=2026-04-09T13:10:36.773162400Z, serial_number=22683637899932, imei1=22683637899932, imei2=22683637899932, popurl=https://www.sunita-achari.biz/voluptas/magniratione#aut, product_id=1, mst_model_id=2], problems=[Problem[id=1, remark=Fugiat in nostrum voluptates inventore eaque laudantium cupiditate voluptas fuga.]]])</span>
+                  <em>
+(Verifying if create job api is able to create Inwarranty job)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -176,20 +367,18 @@
         </div> <!-- panel SuiteName -->
         <div panel-name="test-xml-SuiteName" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">D:\SDET_Course_Notes\APICourceCode\RestAssuredCodePractise\testng.xml</span>
+            <span class="header-content">D:\SDET_Course_Notes\APICourceCode\RestAssuredCodePractise\data-driven-testing.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;SuiteName&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;TestName&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Inwarranty Flow - Data Driven Test&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.api.tests.LoginAPITest&quot;/&gt;
-      &lt;class name=&quot;com.api.tests.CountAPITest&quot;/&gt;
-      &lt;class name=&quot;com.api.tests.UserDetailsAPITest&quot;/&gt;
+      &lt;class name=&quot;com.api.tests.CreateJobAPIFakeDataDrivenTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- TestName --&gt;
+  &lt;/test&gt; &lt;!-- Inwarranty Flow - Data Driven Test --&gt;
 &lt;/suite&gt; &lt;!-- SuiteName --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -201,7 +390,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">TestName (3 classes)</span>
+                <span class="test-name">Inwarranty Flow - Data Driven Test (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -211,6 +400,22 @@
             <span class="header-content">Groups for SuiteName</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">api</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">createJobAPITest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">regression</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">createJobAPITest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-SuiteName" class="panel">
@@ -227,24 +432,52 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(10);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'loginAPI_Test')
-data.setCell(0, 2, 'com.api.tests.LoginAPITest')
-data.setCell(0, 3, 2870);
+data.setCell(0, 1, 'createJobAPITest')
+data.setCell(0, 2, 'com.api.tests.CreateJobAPIFakeDataDrivenTest')
+data.setCell(0, 3, 13802);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'userDetailsAPITest')
-data.setCell(1, 2, 'com.api.tests.UserDetailsAPITest')
-data.setCell(1, 3, 262);
+data.setCell(1, 1, 'createJobAPITest')
+data.setCell(1, 2, 'com.api.tests.CreateJobAPIFakeDataDrivenTest')
+data.setCell(1, 3, 9808);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verifyCountAPIResponse')
-data.setCell(2, 2, 'com.api.tests.CountAPITest')
-data.setCell(2, 3, 252);
+data.setCell(2, 1, 'createJobAPITest')
+data.setCell(2, 2, 'com.api.tests.CreateJobAPIFakeDataDrivenTest')
+data.setCell(2, 3, 7909);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'createJobAPITest')
+data.setCell(3, 2, 'com.api.tests.CreateJobAPIFakeDataDrivenTest')
+data.setCell(3, 3, 6841);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'createJobAPITest')
+data.setCell(4, 2, 'com.api.tests.CreateJobAPIFakeDataDrivenTest')
+data.setCell(4, 3, 5813);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'createJobAPITest')
+data.setCell(5, 2, 'com.api.tests.CreateJobAPIFakeDataDrivenTest')
+data.setCell(5, 3, 5757);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'createJobAPITest')
+data.setCell(6, 2, 'com.api.tests.CreateJobAPIFakeDataDrivenTest')
+data.setCell(6, 3, 4839);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'createJobAPITest')
+data.setCell(7, 2, 'com.api.tests.CreateJobAPIFakeDataDrivenTest')
+data.setCell(7, 3, 4640);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'createJobAPITest')
+data.setCell(8, 2, 'com.api.tests.CreateJobAPIFakeDataDrivenTest')
+data.setCell(8, 3, 3792);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'createJobAPITest')
+data.setCell(9, 2, 'com.api.tests.CreateJobAPIFakeDataDrivenTest')
+data.setCell(9, 3, 3748);
 window.suiteTableData['SuiteName']= { tableData: data, tableDiv: 'times-div-SuiteName'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-SuiteName">
               </div> <!-- times-div-SuiteName -->
             </div> <!-- times-div -->
@@ -270,24 +503,56 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.api.tests.LoginAPITest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.api.tests.CreateJobAPIFakeDataDrivenTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">loginAPI_Test</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">createJobAPITest(CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=...)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.api.tests.CountAPITest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">verifyCountAPIResponse</span>
-                <span class="method-start">2876 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">createJobAPITest(CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=...)</span>
+                <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.api.tests.UserDetailsAPITest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">userDetailsAPITest</span>
-                <span class="method-start">3129 ms</span>
+                <span class="method-name">createJobAPITest(CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=...)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">createJobAPITest(CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=...)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">createJobAPITest(CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=...)</span>
+                <span class="method-start">1 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">createJobAPITest(CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=...)</span>
+                <span class="method-start">1 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">createJobAPITest(CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=...)</span>
+                <span class="method-start">1 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">createJobAPITest(CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=...)</span>
+                <span class="method-start">1 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">createJobAPITest(CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=...)</span>
+                <span class="method-start">1 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">createJobAPITest(CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=...)</span>
+                <span class="method-start">1 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
