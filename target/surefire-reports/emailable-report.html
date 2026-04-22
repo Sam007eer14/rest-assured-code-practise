@@ -9,12 +9,27 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">SuiteName</th></tr>
-<tr><td><a href="#t0">TestName</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">3,427</td><td></td><td></td></tr>
+<tr><td><a href="#t0">TestName</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">7,577</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">SuiteName</th></tr></tbody><tbody id="t0"><tr><th colspan="4">TestName &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.api.tests.CountAPITest</td><td><a href="#m0">verifyCountAPIResponse</a></td><td rowspan="1">1775115085615</td><td rowspan="1">252</td></tr><tr class="passedodd"><td rowspan="1">com.api.tests.LoginAPITest</td><td><a href="#m1">loginAPI_Test</a></td><td rowspan="1">1775115082739</td><td rowspan="1">2870</td></tr><tr class="passedeven"><td rowspan="1">com.api.tests.UserDetailsAPITest</td><td><a href="#m2">userDetailsAPITest</a></td><td rowspan="1">1775115085868</td><td rowspan="1">262</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">SuiteName</th></tr></tbody><tbody id="t0"><tr><th colspan="4">TestName &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.api.tests.LoginAPITest</td><td><a href="#m0">loginAPI_Test</a></td><td rowspan="1">1776844828418</td><td rowspan="1">6237</td></tr><tr><th colspan="4">TestName &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.api.tests.CountAPITest</td><td><a href="#m1">verifyCountAPIResponse</a></td><td rowspan="1">1776844834665</td><td rowspan="1">1004</td></tr><tr class="passedodd"><td rowspan="1">com.api.tests.UserDetailsAPITest</td><td><a href="#m2">userDetailsAPITest</a></td><td rowspan="1">1776844835672</td><td rowspan="1">279</td></tr></tbody>
 </table>
-<h2>TestName</h2><h3 id="m0">com.api.tests.CountAPITest#verifyCountAPIResponse</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.api.tests.LoginAPITest#loginAPI_Test</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>TestName</h2><h3 id="m0">com.api.tests.LoginAPITest#loginAPI_Test</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: 1 expectation failed.
+Expected response time was not a value less than &lt;2000L&gt; milliseconds, was 4815 milliseconds (4815 milliseconds).
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
+	at io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:101)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
+	at com.api.tests.LoginAPITest.loginAPI_Test(LoginAPITest.java:29)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.api.tests.CountAPITest#verifyCountAPIResponse</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m2">com.api.tests.UserDetailsAPITest#userDetailsAPITest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

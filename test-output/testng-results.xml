@@ -2,29 +2,32 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-04-19T16:36:43 IST" name="Default suite" finished-at="2026-04-19T16:36:53 IST" duration-ms="9358">
+  <suite started-at="2026-04-22T22:25:47 IST" name="Default suite" finished-at="2026-04-22T22:25:51 IST" duration-ms="3863">
     <groups>
+      <group name="datadriven">
+        <method signature="LoginAPIJsonDataDrivenTest.loginAPI__Test(com.api.pojo.UserCredentials)[pri:0, instance:com.api.tests.LoginAPIJsonDataDrivenTest@5d534f5d]" name="loginAPI__Test" class="com.api.tests.LoginAPIJsonDataDrivenTest"/>
+      </group> <!-- datadriven -->
       <group name="regression">
-        <method signature="CreateJobAPIFakeDataDrivenTest.createJobAPITest(com.api.pojo.CreateJobPayload)[pri:0, instance:com.api.tests.CreateJobAPIFakeDataDrivenTest@273e7444]" name="createJobAPITest" class="com.api.tests.CreateJobAPIFakeDataDrivenTest"/>
+        <method signature="LoginAPIJsonDataDrivenTest.loginAPI__Test(com.api.pojo.UserCredentials)[pri:0, instance:com.api.tests.LoginAPIJsonDataDrivenTest@5d534f5d]" name="loginAPI__Test" class="com.api.tests.LoginAPIJsonDataDrivenTest"/>
       </group> <!-- regression -->
       <group name="api">
-        <method signature="CreateJobAPIFakeDataDrivenTest.createJobAPITest(com.api.pojo.CreateJobPayload)[pri:0, instance:com.api.tests.CreateJobAPIFakeDataDrivenTest@273e7444]" name="createJobAPITest" class="com.api.tests.CreateJobAPIFakeDataDrivenTest"/>
+        <method signature="LoginAPIJsonDataDrivenTest.loginAPI__Test(com.api.pojo.UserCredentials)[pri:0, instance:com.api.tests.LoginAPIJsonDataDrivenTest@5d534f5d]" name="loginAPI__Test" class="com.api.tests.LoginAPIJsonDataDrivenTest"/>
       </group> <!-- api -->
     </groups>
-    <test started-at="2026-04-19T16:36:43 IST" name="Default test" finished-at="2026-04-19T16:36:53 IST" duration-ms="9358">
-      <class name="com.api.tests.CreateJobAPIFakeDataDrivenTest">
-        <test-method signature="createJobAPITest(com.api.pojo.CreateJobPayload)[pri:0, instance:com.api.tests.CreateJobAPIFakeDataDrivenTest@273e7444]" started-at="2026-04-19T16:36:44 IST" name="createJobAPITest" description="Verifying if create job api is able to create Inwarranty job" data-provider="CreateJobAPIFakerDataProvider" finished-at="2026-04-19T16:36:53 IST" duration-ms="8343" status="PASS">
+    <test started-at="2026-04-22T22:25:47 IST" name="Default test" finished-at="2026-04-22T22:25:51 IST" duration-ms="3863">
+      <class name="com.api.tests.LoginAPIJsonDataDrivenTest">
+        <test-method signature="loginAPI__Test(com.api.pojo.UserCredentials)[pri:0, instance:com.api.tests.LoginAPIJsonDataDrivenTest@5d534f5d]" started-at="2026-04-22T22:25:48 IST" name="loginAPI__Test" description="Verification if login is working" data-provider="LoginAPIExcelDataProvider" finished-at="2026-04-22T22:25:51 IST" duration-ms="2800" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=1, customer=Customer[first_name=Ganesh, last_name=Iyengar, mobile_number=7019767369, mobile_number_alt=7021867037, email_id=swara.jha@rediffmail.com, email_id_alt=bishnu.gowda@hotmail.com], customer_address=CustomerAddress[flat_number=906, apartment_name=8292 Chaten Heights, street_name=34696 Basanti Greens, landmark=837 Adiga Mill, area=17767 Johar Crest, pincode=3905, country=China, state=Dadar and Nagar Haveli], customer_product=CustomerProduct[dop=2026-04-09T11:06:44.777406800Z, serial_number=47798992704149, imei1=47798992704149, imei2=47798992704149, popurl=https://www.aadinath-dhawan.com:42076/molestias/sapiente?occaecati=necessitatibus&qui=dicta#illo, product_id=1, mst_model_id=2], problems=[Problem[id=6, remark=Nemo alias saepe ipsam nulla quam.]]]]]>
+                <![CDATA[com.api.pojo.UserCredentials@2767f907]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createJobAPITest -->
-      </class> <!-- com.api.tests.CreateJobAPIFakeDataDrivenTest -->
+        </test-method> <!-- loginAPI__Test -->
+      </class> <!-- com.api.tests.LoginAPIJsonDataDrivenTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
