@@ -20,8 +20,8 @@ public class DataProviderUtils {
 		return JsonReaderUtility.loadJson("testData/demo.json", UserCredentials[].class);
 	}
 	@DataProvider(name = "LoginAPIExcelDataProvider", parallel = true)
-	public static Iterator<UserCredentials> LoginAPIExcelDataProvider() {
-		return ExcelReaderUtil.loadExcelData();
+	public static Iterator<UserBean> LoginAPIExcelDataProvider() {
+		return ExcelReaderUtil.loadExcelData("LoginTestData", UserBean.class);
 	}
 
 }
